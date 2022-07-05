@@ -1,0 +1,77 @@
+#####-----ReplaceAll()-----#####
+
+List<String> l=new ArrayList<String>();
+l.add("Prasad");
+l.add("Omkar");
+l.add("Manish");
+l.add("Vikas");
+	    
+System.out.println("before list:"+l);    
+	    
+Collections.replaceAll(l, "Prasad", "Shrddha");
+
+l.replaceAll(new Op());
+System.out.println("after list:"+l);
+	    
+
+import java.util.function.UnaryOperator;
+
+public class Op implements UnaryOperator<String>{
+
+	@Override
+	public String apply(String str) {
+		// TODO Auto-generated method stub
+		return str.toUpperCase();
+	}
+
+}
+
+#####-------retainAll()-----#####
+
+List<String> l=new ArrayList<String>();
+	    l.add("Pen");
+	    l.add("pencil");
+	    l.add("Rubber");
+	    l.add("Scale");
+	    
+List<String> stationary=new ArrayList<String>();
+	    
+	    stationary.add("Red Pen");
+	    stationary.add("pencil");
+	    stationary.add("Rubber");
+	    stationary.add("Scale");
+	    
+	    stationary.retainAll(l);
+	    System.out.println(stationary);
+
+
+####------subList()----######
+this method returns a view of the specified range within this 
+list.
+
+List<String> stationary=new ArrayList<String>();
+	    
+   stationary.add("Red Pen");
+   stationary.add("pencil");
+   stationary.add("Rubber");
+   stationary.add("Scale");
+	    	    
+List<String>arrayList=stationary.subList(2, 3);
+System.out.println("return given range elements:"+arrayList);
+
+
+#####--------removeIf()------######
+
+HashSet<String> hs=new HashSet<String>();
+
+		hs.add("Sachin");
+		hs.add("Sandesh");
+		hs.add("Vikas");
+		hs.add("Anil");
+
+   boolean checkRemove=hs.removeIf(n -> (n.charAt(0) == 'S'));
+   System.out.println("check element are remopve or not:"+checkRemove);
+	   
+	   for (String str : hs) {
+		System.out.println(str);
+	}

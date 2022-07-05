@@ -1,0 +1,58 @@
+Points:
+  1) The Underlined data Structure Resizable Array or Growable array.
+  2) Duplicate 
+  3) Insertion order is perserved.
+  4) Heterogeneous objects are allowed 
+  5) Null Insertion is possible.
+ 
+# Vector class implemented Serializable, Cloneable and RandomAccess Interfaces.
+# Most of the methods present in Vector are Synchronized. Hence Vector objcet is Thread-Safe.
+# Best choice if the frequent operation is retrieval.
+
+Vector Specific Methods:
+     ** For adding objects **
+     1) add(object o) [from Collection - List[I]]
+     2) add(int index, Objcet o) [from List]
+     3) addElement(Object o) [from Vector].
+
+    ** for removing Objcets **
+     1) removeElement(Object o)
+     2) RemoveElementAt(int index)
+     3) removeAllElements()
+
+    ** for Accessing Elements:
+     1) object elementAt(int index)
+     2) object firstElement()
+     3) object lastElement()
+
+other Methods:
+   int size() , int capacity(), Enumeration elements().
+
+
+Vector Class Constructor:
+   I. Vector v=new Vector(); // default initial capacity of Vector is 10. 
+                // Once vector Reaches its max capacity a new vector will be Created.with (new capacity = 2 * current capacity)
+
+  II. Vector v=new Vector(int initialCapacity); // Creates an empty Vector Object with specified initial capacity.
+
+ III. Vector v=new Vector(int initialCapacity, int incrementalcapacity);
+
+  IV. Vector v=new Vector(collection c); // Creates an equivalent Vector Object for the given Collection.
+
+public class VectorTest {
+
+	public static void main(String[] args) {
+		
+		Vector v=new Vector();
+		
+		System.out.println("default capacity of Vector is:"+v.capacity());
+		for(int i=0; i<10; i++) {
+			v.addElement(i);
+		}
+		System.out.println(v.capacity());
+		v.addElement("A");
+		System.out.println("reaches maximum capacity:"+v.capacity());
+		
+		System.out.println(v);
+	}
+}

@@ -1,0 +1,27 @@
+
+
+
+
+Points:
+  1) The Underlined data Structure Resizable Array or Growable array.
+  2) Duplicate 
+  3) Insertion order is perserved.
+  4) Heterogeneous objects are allowed 
+  5) Null Insertion is possible.
+
+Constructors:
+  I) ArrayList al=new ArrayList();  
+   // default initial capacity of ArrayList is 10. 
+   // Once ArrayList Reaches its capacity a new array list will be Craeted.with (new capacity = (current capacity*3/2)+1)
+
+ II) ArrayList al=new ArrayList(int initialCapacity);
+
+III) ArrayList al=new ArrayList(collection c);
+
+*Serializable , Clonable*
+ArrayList and Vector Classes implements RandomAccess Interface so that we can access any random element with same speed.
+Hence if our frequent operation is retrieval operation then ArrayList is the best choice.
+
+RandomAccess
+Present in java.util pacakge.
+It does not contain any method and it is a Marker interfaces.

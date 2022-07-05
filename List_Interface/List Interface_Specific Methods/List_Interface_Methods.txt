@@ -1,0 +1,27 @@
+#####-----ReplaceAll()-----#####
+
+List<String> l=new ArrayList<String>();
+l.add("Prasad");
+l.add("Omkar");
+l.add("Manish");
+l.add("Vikas");
+	    
+System.out.println("before list:"+l);    
+	    
+Collections.replaceAll(l, "Prasad", "Shrddha");
+
+l.replaceAll(new Op());
+System.out.println("after list:"+l);
+	    
+
+import java.util.function.UnaryOperator;
+
+public class Op implements UnaryOperator<String>{
+
+	@Override
+	public String apply(String str) {
+		// TODO Auto-generated method stub
+		return str.toUpperCase();
+	}
+
+}

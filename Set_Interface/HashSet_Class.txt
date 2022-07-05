@@ -1,0 +1,25 @@
+
+
+Points:
+  1) The underlying data structure is HashTable.
+  2) duplicates are not allowed.
+  3) Insertion order is not preserved and all objects will be inserted
+    based on hash-code of objects.
+  4) Heterogeneous objects are allowed.
+  5) 'null' insertion is possible.
+  6) implements serializable and Clonable interfaces but not RandomAccess.
+  7) HashSet is the best choice, if our frequent operation is Search operation.
+
+Constructor:
+  I] HashSet h=new HashSet(); // default initial capacity is 16.
+
+ II] HashSet h=new HashSet(int initialCapacity);
+
+III] HashSet h=new HashSet(int initialCapacity, float loadFactor);
+
+ IV] HashSet h=new HashSet(Collection c);
+
+
+Load Factor/ Fill Ratio: 
+  -- after loading the how much factor, a new HashSet object will be created. that factor is called
+ as Load Factor or Fill Ratio.

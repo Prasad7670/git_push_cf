@@ -1,0 +1,16 @@
+Points:
+  1) Stack is child class of Vector.
+  2) It is specially designed class for Last In First Out (LIFO) order.
+
+Constructor:
+  I. Stack s=new Stack();
+
+Stack Specific Methods:
+   A] object push(objcet o); // For inserting an object to the stack
+   B] object pop(); // To remove and returns top of the stack.
+   C] object peek(); // To return the top of the stack without removal of objcet.
+   D] int search(); 
+       // If the specified object is available it returns its offset from top of the Stack.
+       //  If the object is not available then it returns -1. 
+
+   E] object empty(); // For its check whether objects into the stack are empty or not.

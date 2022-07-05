@@ -1,0 +1,19 @@
+
+add(object o)-->add(int index, object element)-->addAll(int index, collection c)-->addAll(collection c) .
+
+
+
+remaining Methods int List Interface.
+1. toArray()   
+2. toArray(object[] o)
+3. subList()
+4. replaceAll()
+5. retainAll()
+6. spliterator()
+
+
+collection specific method.
+1. toArray(IntFunction generator)
+2. parallelStream()
+3. removeIf().
+4. sort(comparator c)
